@@ -18,4 +18,3 @@ services:
       POSTGRES_USER: devops
       POSTGRES_PASSWORD: devops123
       POSTGRES_DB: devopsdb
-

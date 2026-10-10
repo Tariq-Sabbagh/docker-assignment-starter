@@ -24,4 +24,3 @@ Stop the previous exercise before reusing its host port.
 Never commit passwords, Docker Hub tokens, API keys, private keys, or `.env`
 files. The credentials supplied for the networking exercise are public,
 lab-only examples. Do not use them for real systems.
-

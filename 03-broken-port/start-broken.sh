@@ -9,4 +9,3 @@ docker run -d --name broken-app -p 8080:5000 devops-node-app:v1
 
 printf '\nTry opening http://localhost:8080\n'
 printf 'If it does not open, inspect the container and read its logs.\n'
-
