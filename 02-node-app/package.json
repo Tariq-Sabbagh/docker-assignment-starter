@@ -1,0 +1,11 @@
+{
+  "name": "devops-node-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "5.3.0"
+  }
+}

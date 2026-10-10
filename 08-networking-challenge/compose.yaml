@@ -1,0 +1,21 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8081:3000"
+    environment:
+      DB_HOST: localhost
+      DB_PORT: "5432"
+      DB_USER: devops
+      DB_PASSWORD: devops123
+      DB_NAME: devopsdb
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: devops
+      POSTGRES_PASSWORD: devops123
+      POSTGRES_DB: devopsdb
+
