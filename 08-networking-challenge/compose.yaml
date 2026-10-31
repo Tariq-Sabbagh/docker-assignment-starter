@@ -4,7 +4,7 @@ services:
     ports:
       - "8081:3000"
     environment:
-      DB_HOST: localhost
+      DB_HOST: postgres
       DB_PORT: "5432"
       DB_USER: devops
       DB_PASSWORD: devops123
