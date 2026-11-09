@@ -127,7 +127,7 @@ Push the image to my repository on Docker Hub
 ____________________
 
 What I learned:
-
+How to push images to Docker Hub
 ____________________
 
 Problem I faced:
@@ -249,21 +249,28 @@ ____________________
 ## Bonus Mission
 
 Commands used:
+ cd 02-node-app
+ nano compose.yaml
+docker compose up 
+docker compose down
+docker compose ps
 
 ____________________
 
 What happened:
-
+I set up Docker Compose, included a database and an application, and then created containers to run the images.
 ____________________
 
 What I learned:
-
+How to create a Docker Compose file and manage images
 ____________________
 
 Problem I faced:
-
+It was asking for a database password.
 ____________________
 
 How I fixed it:
-
+I used " environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+" to solve the problem.
 ____________________

@@ -1,0 +1,21 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8080:3000"
+    environment:
+      APP_ENV: production
+      DB_HOST: postgreSQL
+    depends_on:
+      - postgreSQL
+
+  postgreSQL:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
+
