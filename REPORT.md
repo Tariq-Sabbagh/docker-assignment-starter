@@ -249,10 +249,7 @@ ____________________
 ## Bonus Mission
 
 Commands used:
-git add 
-git commit -m ""
-git push -u origin 
-docker-assignment
+
 ____________________
 
 What happened:
